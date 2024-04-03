@@ -11,6 +11,7 @@ import java.io.IOException;
 public class PhotosApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        AdminController.nonAdminUsers = SerializeUsers.DeserializeAllUsers();
         Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
         Scene scene = new Scene(root, 1024, 768);
         stage.setTitle("Photo Application");
