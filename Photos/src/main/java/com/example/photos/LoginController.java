@@ -1,4 +1,4 @@
-package com.example.photos;
+package application;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,11 +9,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import java.io.IOException;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginController {
+public class LoginController implements Serializable{
 
     @FXML
     TextField nameTextField;
@@ -23,7 +24,6 @@ public class LoginController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-
 
     public void login(ActionEvent event) throws IOException {
         String username = nameTextField.getText();
@@ -46,11 +46,12 @@ public class LoginController {
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
-            stage.show();        }
+            stage.show();
+        }
         else {
             for (User i : AdminController.nonAdminUsers){
                 if (username.equals(i.username)){
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("Welcome.fxml")); //PROPERLY UPDATE THIS
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("User.fxml")); //PROPERLY UPDATE THIS
                     root = loader.load();
 
                     stage = (Stage)((Node)event.getSource()).getScene().getWindow();
