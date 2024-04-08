@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"app.photoapplication","l":"app.photoapplication"},{"m":"app.photoapplication","l":"app.photoapplication.controller"},{"m":"app.photoapplication","l":"app.photoapplication.model"}];updateSearchResults();
