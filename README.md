@@ -1,4 +1,5 @@
 Photo Album Application
+
 A fully functional photo album application for unique users coded in Java, Java FX, and FXML for CS213, Spring 2024.
 
 This project utilizes the Java Serializable package to create and save unique user data of photo albums. 
