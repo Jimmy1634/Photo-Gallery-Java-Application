@@ -1,11 +1,11 @@
-Photo Album Application
+# Photo Gallery Application in Java
 
-A fully functional photo album application for unique users coded in Java, Java FX, and FXML for CS213, Spring 2024.
+This single-user Photo Gallery Application was coded in April 2024 for the course Software Methodology. It allows the storage and management of photos in one or more albums. All user interactions were implemented in Java FX, and all UIs were designed in FXML. 
 
-This project utilizes the Java Serializable package to create and save unique user data of photo albums. 
-Unique users can be created via the "admin" user, and each user is preloaded with an example stock album containing default photos.
-Users can then create their own albums and add/remove photos, as well as customize photos by adding tags (name:value pairs such as "location : New York") and captions.
-Uploading photos to the software will serialize the image's path within the local machine so data is saved after every session.
+Some of the features of this application include:
+- An admin subsystem which allows the admin to create/delete users and view all users
+- The non-admin subsystem which allows users to login and view all albums and photo information for this user from a previous session
+- A user can then create/delete/rename photo albums, open an album which displays all photos, and search for photos
+- After opening an album, the user can add/remove photos, caption/recaption photos, display the photo, add/delete tags from photos, or copy a photo to a different album
+- The search function allows the user to search by date range and tag-value pairs
 
-Note that for the grader, the HTML documents were initially uploaded into the repository. However, when the project was zipped, the zipped file was unable to be downloaded or opened due to a "virus detected."
-We tried many solutions, such as generating the documents in a different manner, but we utimately were unable to create a version in which the zipped file would successfully download. Thus, they were omitted.
